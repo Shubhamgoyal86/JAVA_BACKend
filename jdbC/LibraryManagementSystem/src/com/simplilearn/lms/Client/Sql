@@ -1,0 +1,15 @@
+use simplilearn;
+	CREATE TABLE BOOKS(
+	BOOK_ID int NOT NULL PRIMARY KEY,
+	BOOK_NAME varchar(255) NOT NULL,
+	BOOK_Author varchar (255),
+	BOOK_PUBLICATION varchar (255) ,
+	BOOK_PRICE Int,
+	BOOK_ISBN int);
+    
+CREATE TABLE USER(
+USER_NAME varchar (255) NOT NULL,
+USER_PASS varchar (255) );	
+select * from USER where USER_NAME =? AND USER_PASS = ?
+insert into BOOKS values(?,?,?,?,?,?);
+select * from BOOKS where bookid=?;
